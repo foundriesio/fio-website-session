@@ -1,5 +1,6 @@
 {
   "name": "@foundriesio/web-session",
+  "private": false,
   "version": "1.0.0",
   "engines": {
     "node": ">= 12"
