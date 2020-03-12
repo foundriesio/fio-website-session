@@ -9,7 +9,7 @@
   "main": "dist/main.js",
   "scripts": {
     "prepublish": "npm run build",
-    "lint": "prettier *.js ./src/*.js ./src/**/*.js  --write",
+    "lint": "prettier *.md *.js ./src/*.js ./src/**/*.js  --write",
     "build": "NODE_ENV=production webpack --progress",
     "build:test": "NODE_ENV=test webpack --display none",
     "test": "NODE_ENV=test mocha --check-leaks --inline-diffs --allow-uncaught --exit ./src/test",
