@@ -37,3 +37,5 @@ export function session(client, log) {
   sessionConfig.store = sessionStore(expressSession, client, log);
   return expressSession(sessionConfig);
 }
+
+export default session;
