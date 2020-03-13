@@ -54,18 +54,6 @@ export function config() {
         default: 'sid:',
         env: 'FIO_SESSION_PREFIX'
       }
-    },
-    redis: {
-      host: {
-        format: String,
-        default: 'localhost',
-        env: 'FIO_REDIS_HOST'
-      },
-      port: {
-        format: 'port',
-        default: 6379,
-        env: 'FIO_REDIS_PORT'
-      }
     }
   });
 
