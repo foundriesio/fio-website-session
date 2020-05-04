@@ -29,9 +29,10 @@ export function session(client, log) {
   sessionConfig.name = cfg.get('session').name;
   sessionConfig.secret = cfg.get('session').secret;
   sessionConfig.cookie = {
+    httpOnly: true,
     domain: cfg.get('cookie').domain,
+    maxAge: cfg.get('cookie').maxAge,
     secure: cfg.get('cookie').secure,
-    maxAge: cfg.get('cookie').maxAge
   };
 
   sessionConfig.store = sessionStore(expressSession, client, log);
