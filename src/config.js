@@ -7,6 +7,13 @@ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2
 */
 
 import convict from 'convict';
+import convict_format_with_moment from 'convict-format-with-moment';
+import convict_format_with_validator from 'convict-format-with-validator';
+import json5 from 'json5';
+
+convict.addFormats(convict_format_with_validator);
+convict.addFormats(convict_format_with_moment);
+convict.addParser({ extension: 'json', parse: json5.parse });
 
 const { NODE_ENV } = process.env;
 
@@ -61,6 +68,8 @@ export function config() {
   if (configFile) {
     cfg.loadFile(configFile);
   }
+
+  cfg.validate();
 
   return cfg;
 }
