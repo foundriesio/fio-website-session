@@ -9,7 +9,7 @@
   "main": "dist/main.js",
   "scripts": {
     "prebuild": "rimraf dist",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "lint": "prettier *.md *.js ./src/*.js ./src/**/*.js  --write",
     "build": "NODE_ENV=production webpack --progress",
     "build:test": "NODE_ENV=test webpack --display none",
