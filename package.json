@@ -24,7 +24,7 @@
   "author": "Milo Casagrande <milo@foundries.io>",
   "license": "Apache-2.0",
   "dependencies": {
-    "connect-redis": "^4.0.4",
+    "connect-redis": "^5.0.0",
     "convict": "^6.0.0",
     "convict-format-with-moment": "^6.0.0",
     "convict-format-with-validator": "^6.0.0",
