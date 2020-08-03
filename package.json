@@ -34,16 +34,16 @@
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "dotenv": "^8.2.0",
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "express": "^4.17.1",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.0",
     "prettier": "^2.0.5",
     "redis-mock": "^0.49.0",
     "rimraf": "^3.0.2",
     "supertest": "^4.0.2",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "repository": {
