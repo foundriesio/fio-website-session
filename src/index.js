@@ -14,7 +14,8 @@ import sessionStore from './store';
 const sessionConfig = {
   resave: false,
   saveUninitialized: false,
-  rolling: false
+  rolling: false,
+  proxy: true
 };
 
 /**
