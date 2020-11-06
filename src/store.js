@@ -8,7 +8,7 @@ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2
 
 import connectRedis from 'connect-redis';
 
-import config from './config';
+import config from './config.js';
 
 /**
  *

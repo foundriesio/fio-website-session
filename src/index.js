@@ -8,8 +8,8 @@ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2
 
 import expressSession from 'express-session';
 
-import config from './config';
-import sessionStore from './store';
+import config from './config.js';
+import sessionStore from './store.js';
 
 const sessionConfig = {
   resave: false,
