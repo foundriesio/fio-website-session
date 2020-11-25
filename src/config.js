@@ -41,7 +41,7 @@ export function config() {
       },
       maxAge: {
         format: 'duration',
-        default: 172800000,
+        default: 432000000,
         env: 'FIO_COOKIE_MAXAGE'
       }
     },
