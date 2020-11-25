@@ -46,6 +46,16 @@ export function config() {
       }
     },
     session: {
+      resave: {
+        format: Boolean,
+        default: true,
+        env: 'FIO_SESSION_RESAVE'
+      },
+      rolling: {
+        format: Boolean,
+        default: true,
+        env: 'FIO_SESSION_ROLLING'
+      },
       secret: {
         format: String,
         default: 'taco cat',

@@ -27,6 +27,8 @@ const sessionConfig = {
 export function session(client, log) {
   const cfg = config();
 
+  sessionConfig.resave = !!cfg.get('session').resave;
+  sessionConfig.rolling = !!cfg.get('session').rolling;
   sessionConfig.name = cfg.get('session').name;
   sessionConfig.secret = cfg.get('session').secret;
   sessionConfig.cookie = {
