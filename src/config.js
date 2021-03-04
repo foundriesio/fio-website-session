@@ -15,63 +15,57 @@ convict.addFormats(convict_format_with_validator);
 convict.addFormats(convict_format_with_moment);
 convict.addParser({ extension: 'json', parse: json5.parse });
 
-const { NODE_ENV } = process.env;
-
-if (NODE_ENV !== 'production') {
-  require('dotenv').config();
-}
-
 export function config() {
   const cfg = convict({
     config: {
       format: String,
       default: '',
-      env: 'FIO_CONFIG_FILE'
+      env: 'FIO_CONFIG_FILE',
     },
     cookie: {
       domain: {
         format: String,
         default: 'localhost',
-        env: 'FIO_COOKIE_DOMAIN'
+        env: 'FIO_COOKIE_DOMAIN',
       },
       secure: {
         format: Boolean,
         default: false,
-        env: 'FIO_COOKIE_SECURE'
+        env: 'FIO_COOKIE_SECURE',
       },
       maxAge: {
         format: 'duration',
         default: 432000000,
-        env: 'FIO_COOKIE_MAXAGE'
-      }
+        env: 'FIO_COOKIE_MAXAGE',
+      },
     },
     session: {
       resave: {
         format: Boolean,
         default: true,
-        env: 'FIO_SESSION_RESAVE'
+        env: 'FIO_SESSION_RESAVE',
       },
       rolling: {
         format: Boolean,
         default: true,
-        env: 'FIO_SESSION_ROLLING'
+        env: 'FIO_SESSION_ROLLING',
       },
       secret: {
         format: String,
         default: 'taco cat',
-        env: 'FIO_SESSION_SECRET'
+        env: 'FIO_SESSION_SECRET',
       },
       name: {
         format: String,
         default: 'sid',
-        env: 'FIO_SESSION_NAME'
+        env: 'FIO_SESSION_NAME',
       },
       prefix: {
         format: String,
         default: 'sid:',
-        env: 'FIO_SESSION_PREFIX'
-      }
-    }
+        env: 'FIO_SESSION_PREFIX',
+      },
+    },
   });
 
   const configFile = cfg.get('config');
