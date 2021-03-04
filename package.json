@@ -2,7 +2,7 @@
   "name": "@foundriesio/web-session",
   "description": "Handle *.foundries.io webapps server/cookie sessions",
   "private": false,
-  "version": "1.4.14",
+  "version": "2.0.0",
   "type": "module",
   "main": "dist/main.js",
   "module": "src/index.js",
